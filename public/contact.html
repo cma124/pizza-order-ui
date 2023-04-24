@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Pizza | Contacts</title>
+
+        <!-- Pizza Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rum+Raisin&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body class="font-body bg-background">
+        <header
+            class="bg-black-500 text-white p-7 sm:px-12 md:px-24 lg:px-28 xl:px-36 2xl:px-44"
+        >
+            <nav class="lg:flex lg:items-center lg:gap-16">
+                <!-- Logo -->
+                <div class="flex justify-between items-center">
+                    <!-- Home Link -->
+                    <a
+                        href="./index.html"
+                        class="font-header text-4xl hover:text-pinky-500 transition-colors ease-in-out duration-300 flex items-center gap-2"
+                    >
+                        <img
+                            src="./images/pizza-logo.png"
+                            alt="pizza logo"
+                            class="w-12 lg:w-16"
+                        />
+                        My Pizza
+                    </a>
+
+                    <!-- Hamburger Menu Button for Mobile & Tablet -->
+                    <button id="menu-btn">
+                        <i
+                            class="fa-solid fa-bars fa-2x cursor-pointer lg:hidden"
+                        ></i>
+                    </button>
+                </div>
+
+                <!-- Nav Links -->
+                <div
+                    id="menu"
+                    class="h-0 overflow-hidden lg:h-auto lg:flex-1 transition-all ease-in-out duration-300"
+                >
+                    <ul
+                        class="flex flex-col gap-5 lg:w-full lg:flex-row lg:items-center lg:gap-10"
+                    >
+                        <li>
+                            <a
+                                href="./index.html"
+                                class="pb-1 border-b-2 border-black-500 hover:border-pinky-500 transition-colors ease-in-out duration-300"
+                                >Home</a
+                            >
+                        </li>
+
+                        <li>
+                            <a
+                                href="./menu.html"
+                                class="pb-1 border-b-2 border-black-500 hover:border-pinky-500 transition-colors ease-in-out duration-300"
+                                >Menu</a
+                            >
+                        </li>
+
+                        <li>
+                            <a
+                                href="./contact.html"
+                                class="pb-1 border-b-2 hover:border-pinky-500 transition-colors ease-in-out duration-300 border-pinky-500"
+                                >Contacts</a
+                            >
+                        </li>
+
+                        <!-- Profile -->
+                        <li class="lg:ms-auto">
+                            <a href="./profile.html">
+                                <!-- Profile Image -->
+                                <img
+                                    src="./images/profile.jpeg"
+                                    alt="profile picture"
+                                    class="w-12 rounded-full"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Cart -->
+            <a
+                href="./cart.html"
+                class="bg-pinky-500 text-white p-3 pb-2 border rounded-lg fixed bottom-3 right-3 hover:bg-black-500 transition-colors ease-in-out duration-300"
+            >
+                <!-- Cart Total -->
+                <span
+                    class="text-sm bg-black-300 p-1 rounded-md absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2"
+                    >3</span
+                >
+
+                <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            </a>
+
+            <div
+                class="px-6 py-10 sm:px-12 md:px-24 lg:px-28 xl:px-36 2xl:px-44"
+            >
+                <h1 class="font-header text-5xl text-center tracking-wide mb-5">
+                    Contacts
+                </h1>
+
+                <p class="text-xl text-black-300 text-center mb-7">
+                    Contact Us In A Convient Way
+                </p>
+
+                <div
+                    class="flex flex-col gap-10 items-center lg:flex-row lg:justify-center lg:gap-20"
+                >
+                    <ul>
+                        <li class="mb-7">
+                            <!-- Location -->
+                            <i class="fa-solid fa-location-dot fa-xl me-2"></i>
+                            Yangon, Myanmar
+                        </li>
+
+                        <li class="mb-7">
+                            <!-- Phone -->
+                            <i class="fa-solid fa-phone fa-xl me-2"></i>
+                            +95 9 123 456 789
+                        </li>
+
+                        <li class="mb-7">
+                            <!-- Mail -->
+                            <i class="fa-solid fa-envelope fa-xl me-2"></i>
+                            mypizza@gmail.com
+                        </li>
+
+                        <li>
+                            <!-- Hour -->
+                            <i class="fa-solid fa-clock fa-xl me-2"></i>
+                            10:00 AM - 09:00 PM
+                        </li>
+                    </ul>
+
+                    <!-- Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d122212.2611972228!2d96.16424894015927!3d16.81974874882227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sThe%20Pizza%20Company!5e0!3m2!1sen!2smm!4v1681460745296!5m2!1sen!2smm"
+                        height="300"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full max-w-md border border-pinky-500 rounded-lg"
+                    ></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-pinky-500 text-white text-center lg:text-start">
+            <div class="py-10 lg:px-28 xl:px-36 2xl:px-44">
+                <div class="flex flex-col gap-6 lg:flex-row lg:justify-between">
+                    <nav>
+                        <h4 class="text-lg font-bold tracking-wide mb-4">
+                            My Pizza
+                        </h4>
+
+                        <ul>
+                            <li class="mb-4">
+                                <a
+                                    href="./index.html"
+                                    class="pb-1 border-b-2 border-pinky-500 hover:border-white transition-colors ease-in-out duration-300"
+                                    >Home</a
+                                >
+                            </li>
+
+                            <li class="mb-4">
+                                <a
+                                    href="./menu.html"
+                                    class="pb-1 border-b-2 border-pinky-500 hover:border-white transition-colors ease-in-out duration-300"
+                                    >Menu</a
+                                >
+                            </li>
+
+                            <li class="mb-4">
+                                <a
+                                    href="./cart.html"
+                                    class="pb-1 border-b-2 border-pinky-500 hover:border-white transition-colors ease-in-out duration-300"
+                                    >Cart</a
+                                >
+                            </li>
+
+                            <li class="mb-4">
+                                <a
+                                    href="./profile.html"
+                                    class="pb-1 border-b-2 border-pinky-500 hover:border-white transition-colors ease-in-out duration-300"
+                                    >Profile</a
+                                >
+                            </li>
+
+                            <li>
+                                <a
+                                    href="./contact.html"
+                                    class="pb-1 border-b-2 border-pinky-500 hover:border-white transition-colors ease-in-out duration-300"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div>
+                        <h4 class="text-lg font-bold tracking-wide mb-4">
+                            Social Networks
+                        </h4>
+
+                        <ul
+                            class="flex justify-center items-center gap-3 lg:justify-start"
+                        >
+                            <li>
+                                <!-- Facebook Link -->
+                                <a href="#"
+                                    ><i
+                                        class="fa-brands fa-square-facebook fa-2x hover:text-black-500 transition-colors ease-in-out duration-300"
+                                    ></i
+                                ></a>
+                            </li>
+
+                            <li>
+                                <!-- Twitter Link -->
+                                <a href="#"
+                                    ><i
+                                        class="fa-brands fa-square-twitter fa-2x hover:text-black-500 transition-colors ease-in-out duration-300"
+                                    ></i
+                                ></a>
+                            </li>
+
+                            <li>
+                                <!-- Instagram Link -->
+                                <a href="#"
+                                    ><i
+                                        class="fa-brands fa-square-instagram fa-2x hover:text-black-500 transition-colors ease-in-out duration-300"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold tracking-wide mb-4">
+                            Main Contacts
+                        </h4>
+
+                        <ul>
+                            <li class="mb-4">
+                                <i
+                                    class="fa-solid fa-location-dot fa-xl me-2"
+                                ></i>
+                                Yangon, Myanmar
+                            </li>
+
+                            <li class="mb-4">
+                                <i class="fa-solid fa-phone fa-xl me-2"></i>
+                                +95 9 123 456 789
+                            </li>
+
+                            <li class="mb-4">
+                                <i class="fa-solid fa-envelope fa-xl me-2"></i>
+                                mypizza@gmail.com
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-clock fa-xl me-2"></i>
+                                10:00 AM - 09:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <!-- Scripts -->
+    <script src="./js/layout.js" defer></script>
+</html>
