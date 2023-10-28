@@ -4,7 +4,7 @@ Pizza order system UI for user
 
 ## Live Site URL
 
-[darling-pothos-2b97a0.netlify.app/](https://darling-pothos-2b97a0.netlify.app/)
+[pizza-order-ui-cma124.netlify.app/](https://pizza-order-ui-cma124.netlify.app/)
 
 ## Built with
 
